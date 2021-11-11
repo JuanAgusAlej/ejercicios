@@ -42,3 +42,13 @@ console.log(text.replace("React", "Esta libreria"))
 console.log(text.includes("eficiente"))
 console.log(text.includes("elementos"))
 
+// --------------TAREA 2----------------------
+
+text = "Hoy es un buen día para aprender";
+let palabra = text.split(" ");
+console.log(palabra)
+
+let dia = palabra.indexOf("día");
+let fraseNueva = text.split(" ", dia +1).join(" ");
+
+console.log(fraseNueva)
