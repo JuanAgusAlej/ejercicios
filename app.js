@@ -20,16 +20,6 @@ Tarea 3:
 
 Capitaliza la siguiente palabra: "marmota"
 
-Usando métodos matemáticos
------------------------------------
-
-- Ingresar 3 números
-- indicar cual es el mayor
-- indicar cual es el menor
-- obtener la raíz cuadrada del segundo número
-
-
-
 */
 
 
@@ -60,3 +50,19 @@ palabra = "marmota";
 let mayuscula = palabra.split("");
 mayuscula[0] = mayuscula[0].toUpperCase();
 console.log(mayuscula.join(""));
+
+/*
+Usando métodos matemáticos
+-----------------------------------
+- Ingresar 3 números
+- indicar cual es el mayor
+- indicar cual es el menor
+- obtener la raíz cuadrada del segundo número
+
+*/
+
+let number = [8, 6, 7]
+
+console.log(Math.max(number[0], number[1], number[2]))
+console.log(Math.min(number[0], number[1], number[2]))
+console.log(Math.sqrt(number[1]))
