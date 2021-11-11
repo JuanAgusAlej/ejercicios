@@ -52,3 +52,11 @@ let dia = palabra.indexOf("día");
 let fraseNueva = text.split(" ", dia +1).join(" ");
 
 console.log(fraseNueva)
+
+
+// --------------TAREA 3----------------------
+
+palabra = "marmota";
+let mayuscula = palabra.split("");
+mayuscula[0] = mayuscula[0].toUpperCase();
+console.log(mayuscula.join(""));
