@@ -1,3 +1,4 @@
+
 /*
 
 Tarea 1:
@@ -20,7 +21,7 @@ Tarea 3:
 
 Capitaliza la siguiente palabra: "marmota"
 
-*/
+
 
 
 
@@ -59,7 +60,7 @@ Usando métodos matemáticos
 - indicar cual es el menor
 - obtener la raíz cuadrada del segundo número
 
-*/
+
 
 let number = [8, 6, 7]
 
@@ -84,7 +85,7 @@ la resta del segundo menos el primero.
 
 ejemplo del mensaje: 2 es menor que 5, la resta de 5 - 2 es igual a 3
 
-*/
+
 
 let num1 = parseFloat(prompt("Ingresar un numero"))
 let num2 = parseFloat(prompt("Ingresar un segundo numero"))
@@ -113,7 +114,7 @@ Usando Switch
 - Con una estructura switch verificar la operación y devolver un mensaje con el resultado de la misma.
 - Si se ingresa una operación que no está contemplada devolver un mensaje de error.
 
-*/
+
 
 let num3 = parseFloat(prompt("Ingresar un numero"))
 let num4 = parseFloat(prompt("Ingresar un segundo numero"))
@@ -154,3 +155,38 @@ switch (operator) {
         break;
 }
 
+*/
+
+/*--------------TAREA 6----------------------
+
+Array
+------
+
+- Crea un arreglo llamado tareas
+- Agregar mínimo tres tareas con el método correspondiente
+- Mostrar en consola o por pantalla la lista de las tareas ordenadas alfabéticamente y numeradas. Por ejemplo:
+1 - Estudiar javascript
+2 - Sacar al perro
+3 - Tirar la basura
+- Mostrar tambien la cantidad de tareas que hay en el arreglo
+- Eliminar la primer tarea y agregar una nueva en su lugar. Usar los métodos correspondientes.
+- Reemplazar el valor de la última tarea por "Hacer la tarea para el 24 de noviembre" usando algún método de los arreglos.
+*/
+
+let tareas = []
+for (let i = 0; i < 3; i++) {
+    tareas.push(prompt(`Agrega la tarea ${i+1} de 3:`))
+}
+
+tareas.sort()
+
+for (let i = 0; i < tareas.length; i++) {
+    console.log(`${i + 1} - ${tareas[i]}`)
+}
+
+
+tareas.splice(0, 1, prompt(`Remplazar la tarea uno:`))
+
+let remplazar = "Hacer la tarea para el 24 de noviembre"
+
+tareas.splice(tareas.length-1, 1,remplazar)
