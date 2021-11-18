@@ -120,12 +120,18 @@ let num4 = parseFloat(prompt("Ingresar un segundo numero"))
 let operador = parseFloat(prompt("Ingresar la operacion(+, -, *, /)"))
 
 
-if (isNaN(num1)) {
-    num1= 0
-}
 
-if (isNaN(num2)) {
-    num2= 0
+
+while (isNaN(num3) || isNaN(num4)) {
+    
+    if (isNaN(num3)) {
+        num3= parseFloat(prompt("Ingresar un numero"))
+    }
+    
+    if (isNaN(num4)) {
+        num4= parseFloat(prompt("Ingresar un numero"))
+    }
+
 }
 
 
