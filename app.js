@@ -66,3 +66,91 @@ let number = [8, 6, 7]
 console.log(Math.max(number[0], number[1], number[2]))
 console.log(Math.min(number[0], number[1], number[2]))
 console.log(Math.sqrt(number[1]))
+
+
+//--------------TAREA 4----------------------
+
+/*
+Usando If And Else
+-----------------------
+**Números con condicionales**
+
+- Ingresan dos números
+- Si el primero es mayor que el segundo mostrar en consola 
+la suma de ambos
+- Si el primero es menor que el segundo mostrar en consola 
+la resta del segundo menos el primero.
+- Si son iguales mostrar en consola la multiplicación de ambos.
+
+ejemplo del mensaje: 2 es menor que 5, la resta de 5 - 2 es igual a 3
+
+*/
+
+let num1 = parseFloat(prompt("Ingresar un numero"))
+let num2 = parseFloat(prompt("Ingresar un segundo numero"))
+
+if (num1>num2) {
+    console.log(`La suma es ${num1 + num2}`)
+} else if (num1 < num2) {
+    console.log(`La resta es ${num2 - num1}`)
+} else {
+    console.log(`La multiplicacion es ${num1 * num2}`)
+}
+
+
+
+
+
+//--------------TAREA 5----------------------
+
+/*
+
+Usando Switch
+-----------------
+
+- Recibir dos valores y la operación a realizar (+, -, *, /)
+- Verificar que los valores ingresados no sean NaN, si son NaN convertirlos a 0
+- Con una estructura switch verificar la operación y devolver un mensaje con el resultado de la misma.
+- Si se ingresa una operación que no está contemplada devolver un mensaje de error.
+
+*/
+
+let num3 = parseFloat(prompt("Ingresar un numero"))
+let num4 = parseFloat(prompt("Ingresar un segundo numero"))
+let operador = parseFloat(prompt("Ingresar la operacion(+, -, *, /)"))
+
+
+
+
+while (isNaN(num3) || isNaN(num4)) {
+    
+    if (isNaN(num3)) {
+        num3= parseFloat(prompt("Ingresar un numero"))
+    }
+    
+    if (isNaN(num4)) {
+        num4= parseFloat(prompt("Ingresar un numero"))
+    }
+
+}
+
+
+switch (operator) {
+    case '+':
+        console.log(`La suma es ${ num1 + num2}`)
+        break;
+    case '-':
+        console.log(`La resta es ${ num1 - num2}`)
+    break;
+    case '/':
+        console.log(`La divicion es ${ num1 / num2}`)
+        break;
+    case '*':
+        console.log(`La multiplicacion es ${ num1 * num2}`)
+    break;
+
+    default:
+        console.error("No se ingreso ningun operador")
+        break;
+}
+
