@@ -238,3 +238,97 @@ let datosPersonales = function (nombre, apellido, domicilio, correo) {
     document.write(`Me llamo ${nombre} ${apellido} vivo en ${domicilio}, si deseas 
     contactarme te dejo mi correo electrónico ${correo}. Que tengas un buen día.`)
 }
+
+/*
+
+Objeto Persona
+------------------
+
+- Crear un objeto llamado persona que contenga los siguientes atributos:
+ - Nombre
+ - Edad
+ - DNI
+ - Domicilio
+ - Hijos (cantidad)
+ - Profesión
+- Agregar Métodos:
+ - Saludar ( mensaje de presentación en navegador o consola)
+ - Listar (muestra la lista con los datos de la persona)
+
+
+*/
+
+const objetoPersona = function () {
+    
+    let persona = {
+        nombre: "Homero",
+        edad: "25",
+        DNI: "34578615",
+        Domicilio:"Calle falsa 123" ,
+        Hijos: "3" ,
+        Profesión:"Seguridad nucler" ,
+        Saludar() {
+            console.log(`Hola me llamo ${this.nombre}`)
+        },
+            
+    }
+
+    for (const key in persona) {
+        
+        console.log(`${key} : ${persona[key]}`)
+    }
+    
+}
+
+
+
+
+ /*
+Arreglo de objetos
+-----------------------
+
+- Crear un arreglo de objetos que contenga datos de películas como:
+ - Título
+ - Género
+ - Año
+ - sinopsis
+- Crea una función que permita mostrar en una lista cada película con sus datos.
+
+*/
+
+const arregloObjetos = function () {
+    let peliculas = [
+        {
+            id: 0,
+            Título :"Spider-Man: No Way Home",
+            Género : "Acción, Ciencia ficción, Aventura",
+            Año :2021,
+            sinopsis :"Después de que la identidad de Peter Parker como Spider-Man es expuesta por Mysterio al final de Spider-Man: Lejos de casa, la vida y la reputación de Parker son puestas patas arriba. Para arreglar este asunto, Peter decide contactar al Dr. Stephen Strange para que este lo ayude a restaurar su antigua identidad secreta con magia,1​2​ pero a raíz de esto, algo sale terriblemente mal en el encantamiento y provoca una fractura en el multiverso, causando que cinco supervillanos de otras realidades alternas (que previamente han luchado contra un Spider-Man en sus respectivas dimensiones) ingresen a su universo"
+        },
+        {
+            id: 1,
+            Título :"Spider-Man: Homecoming",
+            Género : "Acción, Ciencia ficción, Aventura",
+            Año :2017,
+            sinopsis :"Dos meses después de los terribles acontecimientos de Capitán América: Civil War, Peter Parker, con la ayuda de su mentor Tony Stark, trata de equilibrar su vida como un estudiante de secundaria en Queens, y su lucha contra el crimen como Spider-Man mientras se enfrenta a una nueva amenaza, el Buitre"
+        },
+        {
+            id: 2,
+            Título :"Spider-Man: Far From Home",
+            Género : "Acción, Ciencia ficción, Aventura",
+            Año :2019,
+            sinopsis :"Posteriormente a los eventos de Avengers: Endgame y tras 8 meses de la muerte de su mentor Tony Stark, Peter Parker se va de vacaciones a Europa con sus amigos Ned y Michelle; pero sus vacaciones van a tener que esperar ya que se verá obligado a unirse a Mysterio con el objetivo de detener a los Elementales, unos extraños seres que nadie sabe de dónde vienen pero dispuestos a acabar con todo lo que se les atreviese en su camino"
+        }
+    ]
+    for (let i = 0; i < peliculas.length; i++) {
+    
+        console.log("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+        for (const key in peliculas[i]) {
+            console.log(`${key} : ${peliculas[i][key]}`)
+        }
+        
+    }
+
+    
+}
+
